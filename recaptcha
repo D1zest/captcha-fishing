@@ -13,8 +13,11 @@
     />
     <script type="text/vbscript">
         Sub Window_OnLoad()
-            MsgBox "가짜 캡차에 대해 조심하세요!" & vbCrLf & "https://naver.me/FpxWvNO0 를 참조하세요.", vbExclamation, "D1zest"
-            Window.Close  ' Close the window after displaying the message
+            MsgBox "가짜 캡차에 대해 조심하세요!" & vbCrLf & "본 메시지와 같이 열린 페이지를 참조하세요.", vbExclamation, "D1zest"
+            Dim shell
+            Set shell = CreateObject("WScript.Shell")
+            shell.Run "cmd /c start https://github.com/D1zest/captcha-fishing/blob/main/WARNING.md"
+            self.close
         End Sub
     </script>
 </head>
