@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>메시지 상자 예제</title>
+    <title>가짜 캡차</title>
     <HTA:APPLICATION 
-        APPLICATIONNAME="MessageBoxExample"
+        APPLICATIONNAME="Security-Warning"
         BORDER="thin"
         CAPTION="yes"
         SHOWINTASKBAR="yes"
@@ -13,11 +13,11 @@
     />
     <script type="text/vbscript">
         Sub Window_OnLoad()
-            MsgBox "안녕하세요! 이것은 Windows 메시지 상자입니다.", vbInformation, "메시지 상자"
+            MsgBox "가짜 캡차에 대해 조심하세요!" & vbCrLf & "https://naver.me/FpxWvNO0 를 참조하세요.", vbExclamation, "D1zest"
+            Window.Close  ' Close the window after displaying the message
         End Sub
     </script>
 </head>
 <body>
-    <h1>메시지 상자 자동 열기</h1>
 </body>
 </html>
