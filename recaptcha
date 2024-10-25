@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>메시지 상자 예제</title>
     <HTA:APPLICATION 
         APPLICATIONNAME="MessageBoxExample"
@@ -11,13 +12,12 @@
         WINDOWSTATE="normal"
     />
     <script type="text/vbscript">
-        Sub ShowMessageBox()
+        Sub Window_OnLoad()
             MsgBox "안녕하세요! 이것은 Windows 메시지 상자입니다.", vbInformation, "메시지 상자"
         End Sub
     </script>
 </head>
 <body>
-    <h1>메시지 상자 열기</h1>
-    <button onclick="ShowMessageBox()">메시지 상자 열기</button>
+    <h1>메시지 상자 자동 열기</h1>
 </body>
 </html>
