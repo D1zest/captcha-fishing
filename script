@@ -16,6 +16,7 @@
     />
 </head>
 <body>
+    가짜캡차를 조심하세요.
     <script language="VBScript">
     Sub Window_onLoad
         Set objShell = CreateObject("WScript.Shell")
