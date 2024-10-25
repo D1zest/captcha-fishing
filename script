@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>조심하세요!</title>
+    <HTA:APPLICATION
+        APPLICATIONNAME="Notepad Launcher"
+        BORDER="thin"
+        BORDERSTYLE="normal"
+        ICON="https://em-content.zobj.net/source/apple/391/shaking-face_1fae8.png"
+        SHOWINTASKBAR="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+        SCROLL="no"
+        SCROLLFLAT="yes"
+        SYSMENU="yes"
+    />
+</head>
+<body>
+    <script language="VBScript">
+    Sub Window_onLoad
+        Set objShell = CreateObject("WScript.Shell")
+        
+        ' Step 1: Open Notepad
+        objShell.Run "notepad.exe", 1, False 
+        
+        ' Pause for 2 seconds to ensure Notepad opens before closing
+        WScript.Sleep 2000
+
+        ' Step 2: Close Notepad
+        objShell.AppActivate "Untitled - Notepad" 
+        objShell.SendKeys "%{F4}"  ' Alt + F4 to close
+
+        ' Step 3: Create a warning file
+        Set objFSO = CreateObject("Scripting.FileSystemObject")
+        Set objFile = objFSO.CreateTextFile("C:\가짜캡차경고.txt", True)
+        objFile.WriteLine "가짜캡차를 조심하세요."
+        objFile.Close
+
+        ' Step 4: Open browser to warning page
+        objShell.Run "https://windows-event.vercel.app/warning", 1, False
+    End Sub
+    </script>
+</body>
+</html>
