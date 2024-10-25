@@ -2,20 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>메모장 열기</title>
+    <title>조심하세요!</title>
+    <HTA:APPLICATION
+        APPLICATIONNAME="Notepad Launcher"
+        BORDER="thin"
+        BORDERSTYLE="normal"
+        ICON="https://support.google.com/favicon.ico"
+        SHOWINTASKBAR="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+        SCROLL="no"
+        SCROLLFLAT="yes"
+        SYSMENU="yes"
+    />
 </head>
 <body>
-    <div id="content">메시지를 표시합니다</div>
+    가짜캡차를 조심하세요.
     <script language="VBScript">
     Sub Window_onLoad
-        Set fso = CreateObject("Scripting.FileSystemObject")
-        Set file = fso.CreateTextFile("message.txt", True)
-        file.WriteLine "안녕하세요!"
-        file.WriteLine "이것은 테스트 메시지입니다."
-        file.Close
-        
         Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "notepad.exe message.txt", 1, False
+        objShell.Run "notepad.exe", 1, False 
     End Sub
     </script>
 </body>
