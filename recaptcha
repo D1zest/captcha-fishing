@@ -18,12 +18,7 @@
             Set shell = CreateObject("WScript.Shell")
             shell.Run "cmd /c start https://github.com/D1zest/captcha-fishing/blob/main/WARNING.md"
             self.close
-            Sub ClearClipboard
-                Dim objHTML
-                Set objHTML = CreateObject("htmlfile")
-                objHTML.parentWindow.clipboardData.setData "text", ""
-                Set objHTML = Nothing
-            End Sub
+        End Sub
     </script>
 </head>
 <body>
