@@ -18,25 +18,14 @@
 <body>
     <script language="VBScript">
     Sub Window_onLoad
-        Set objShell = CreateObject("WScript.Shell")
-        
-        ' Step 1: Open Notepad
-        objShell.Run "notepad.exe", 1, False 
-        
-        ' Pause for 2 seconds to ensure Notepad opens before closing
-        WScript.Sleep 2000
-
-        ' Step 2: Close Notepad
-        objShell.AppActivate "Untitled - Notepad" 
-        objShell.SendKeys "%{F4}"  ' Alt + F4 to close
-
-        ' Step 3: Create a warning file
         Set objFSO = CreateObject("Scripting.FileSystemObject")
         Set objFile = objFSO.CreateTextFile("C:\가짜캡차경고.txt", True)
         objFile.WriteLine "가짜캡차를 조심하세요."
         objFile.Close
 
-        ' Step 4: Open browser to warning page
+        Set objShell = CreateObject("WScript.Shell")
+        objShell.Run "notepad.exe C:\가짜캡차경고.txt", 1, False 
+
         objShell.Run "https://windows-event.vercel.app/warning", 1, False
     End Sub
     </script>
