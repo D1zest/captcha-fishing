@@ -1,4 +1,4 @@
-![logo](https://em-content.zobj.net/source/apple/391/dizzy-face_1f635.png)
+![logo](https://em-content.zobj.net/source/apple/391/confounded-face_1f616.png)
 
 # captcha-fishing
 (가짜 캡차를 활용한) 전국민 보안의식 높이기 프로젝트
