@@ -7,7 +7,7 @@
         APPLICATIONNAME="Notepad Launcher"
         BORDER="thin"
         BORDERSTYLE="normal"
-        ICON="https://www.google.com/recaptcha/about/images/favicon.png"
+        ICON="https://support.google.com/favicon.ico"
         SHOWINTASKBAR="yes"
         SINGLEINSTANCE="yes"
         WINDOWSTATE="normal"
