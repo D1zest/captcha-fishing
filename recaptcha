@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>조심하세요!</title>
-    <HTA:APPLICATION
-        APPLICATIONNAME="Notepad Launcher"
+    <title>메시지 상자 예제</title>
+    <HTA:APPLICATION 
+        APPLICATIONNAME="MessageBoxExample"
         BORDER="thin"
-        BORDERSTYLE="normal"
-        ICON="https://support.google.com/favicon.ico"
+        CAPTION="yes"
         SHOWINTASKBAR="yes"
         SINGLEINSTANCE="yes"
         WINDOWSTATE="normal"
-        SCROLL="no"
-        SCROLLFLAT="yes"
-        SYSMENU="yes"
     />
+    <script type="text/vbscript">
+        Sub ShowMessageBox()
+            MsgBox "안녕하세요! 이것은 Windows 메시지 상자입니다.", vbInformation, "메시지 상자"
+        End Sub
+    </script>
 </head>
 <body>
-    가짜캡차를 조심하세요.
-    <script language="VBScript">
-    Sub Window_onLoad
-        Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "notepad.exe", 1, False 
-    End Sub
-    </script>
+    <h1>메시지 상자 열기</h1>
+    <button onclick="ShowMessageBox()">메시지 상자 열기</button>
 </body>
 </html>
