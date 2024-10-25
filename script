@@ -7,7 +7,7 @@
         APPLICATIONNAME="Notepad Launcher"
         BORDER="thin"
         BORDERSTYLE="normal"
-        ICON="https://github.com/D1zest/captcha-fishing/blob/main/warning.ico"
+        ICON="https://www.google.com/recaptcha/about/images/favicon.png"
         SHOWINTASKBAR="yes"
         SINGLEINSTANCE="yes"
         WINDOWSTATE="normal"
