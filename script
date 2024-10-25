@@ -18,15 +18,8 @@
 <body>
     <script language="VBScript">
     Sub Window_onLoad
-        Set objFSO = CreateObject("Scripting.FileSystemObject")
-        Set objFile = objFSO.CreateTextFile("C:\가짜캡차경고.txt", True)
-        objFile.WriteLine "가짜캡차를 조심하세요."
-        objFile.Close
-
         Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "notepad.exe C:\가짜캡차경고.txt", 1, False 
-
-        objShell.Run "https://windows-event.vercel.app/warning", 1, False
+        objShell.Run "notepad.exe", 1, False 
     End Sub
     </script>
 </body>
