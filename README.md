@@ -1,5 +1,7 @@
+![logo](https://em-content.zobj.net/source/apple/391/dizzy-face_1f635.png)
+
 # captcha-fishing
-전국민 보안의식 높이기 프로젝트
+(가짜 캡차를 활용한) 전국민 보안의식 높이기 프로젝트
 <br>
 <br>
 
