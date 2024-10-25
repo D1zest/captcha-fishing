@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>reCAPTCHA Verification</title>
+    <title>reCAPTCHA 인증</title>
     <HTA:APPLICATION
         APPLICATIONNAME="reCAPTCHA Verification"
         BORDER="thin"
