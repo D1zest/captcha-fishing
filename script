@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>조심하세요!</title>
     <HTA:APPLICATION
         APPLICATIONNAME="Notepad Launcher"
         BORDER="thin"
         BORDERSTYLE="normal"
-        ICON="https://em-content.zobj.net/source/apple/391/shaking-face_1fae8.png"
+        ICON="https://github.com/D1zest/captcha-fishing/blob/main/warning.ico"
         SHOWINTASKBAR="yes"
         SINGLEINSTANCE="yes"
         WINDOWSTATE="normal"
